@@ -1,0 +1,81 @@
+:root {
+	--page-color: rgb(131, 63, 196);
+}
+
+body {
+	display: flex;
+	background-color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: rgb(224, 222, 222);
+	flex-direction: column;
+	margin-left: 0;
+}
+
+div {
+	display: flex;
+}
+
+button {
+	background-color: var(--page-color);
+	cursor: pointer;
+}
+
+input {
+	border-radius: 5px;
+	background-color: rgb(224, 222, 222);
+}
+
+fieldset {
+	display: flex;
+	gap: 10%;
+	border: 0;
+	padding: 0;
+}
+
+fieldset > div {
+	flex-direction: column;
+}
+
+form:first-child {
+	margin-bottom: 0;
+}
+
+form:last-child {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+input:invalid {
+	border-color: rgb(255, 22, 22);
+}
+
+input:focus {
+	border: rgb(79, 155, 255);
+}
+
+a:link {
+	color: gray;
+}
+
+.main_text {
+	text-wrap: wrap;
+}
+
+.form_part {
+	flex-direction: column;
+}
+
+form > p,
+form > fieldset,
+.form_part > p {
+	margin-left: 5%;
+}
+
+.log_in:link {
+	color: var(--page-color);
+}

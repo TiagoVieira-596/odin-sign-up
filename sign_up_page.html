@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="sign_up_page.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div style="">
+			<div></div>
+			<p>
+				Photo by
+				<a href="https://unsplash.com/pt-br/@aldebarans">Aldebaran S</a> on
+				<a href="https://unsplash.com">Unsplash</a>
+			</p>
+		</div>
+		<div class="form_part">
+			<p class="main_text">
+				This is not a real online service! You know you need something like this
+				in your life to help you realize your deepest dreams. Sign up now to get
+				started.
+			</p>
+			<p>You know you want to.</p>
+			<form action="#" method="get" id="user_info">
+				<p>Let's do this!</p>
+				<fieldset>
+					<div>
+						<div><label for="first_name">FIRST NAME</label></div>
+						<input type="text" name="name" id="first_name" />
+					</div>
+					<div>
+						<div><label>LAST NAME</label></div>
+						<input type="text" name="last_name" id="last_name" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<div><label for="email">EMAIL</label></div>
+						<input type="email" name="email" id="email" />
+					</div>
+					<div>
+						<div><label for="phone_number">PHONE NUMBER</label></div>
+						<input
+							type="text"
+							name="phone"
+							id="phone_number"
+							pattern="/d{4}-?/d{4}"
+						/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<div><label for="password">PASSWORD</label></div>
+						<input type="text" name="password" id="password" required />
+					</div>
+					<div>
+						<div><label for="confirm">CONFIRM PASSWORD</label></div>
+						<input type="text" name="confirmation" id="confirm" required />
+					</div>
+				</fieldset>
+			</form>
+			<button form="user_info" type="submit">Create Account</button>
+			<p>Already have an account? <a href="#" class="log_in">Log in</a></p>
+		</div>
+	</body>
+</html>
